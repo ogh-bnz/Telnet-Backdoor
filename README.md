@@ -26,7 +26,7 @@
 > Enable binary mode:  
 - `toggle binary`  
 > Connect to victim:  
-- `open 192.xxx.xx.xxx 80`
+- `open 192.168.0.xxx 4444`
 
 [You should now be successfully connected to the victim machine.]\
 ```Note: The port can be changed by modifying the backdoor.sh source code.```
