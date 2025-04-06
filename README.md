@@ -1,15 +1,36 @@
-# Telnet-Backdoor
+# Telnet Backdoor  
+`Simple backdoor setup using Telnet for remote shell access.`
 
+## Features
 
-* Download (on victim machine) and run as root/give chmod +x permission to run the backdoor properly.
+### 1. Backdoor Script  
+- Download and execute the script on the **target machine** with root privileges or `chmod +x` to ensure proper execution.
 
-Now, on attacker machine start telnet
+### 2. Telnet Connection  
+- Connect to the victim machine using Telnet from the **attacker's machine**.
 
-Commands:
-> telnet
+## About  
+`This setup allows for a reverse shell-like connection using Telnet, suitable for basic backdoor access in controlled environments.`
 
-> toggle binary
+### Usage  
+**1. On the target machine:**  
+- Download the script  
+- Grant execution permission:  
+  - `chmod +x backdoor.sh`  
+- Run the script as root:  
+  - `sudo ./backdoor.sh`
 
-> 192.xxx.xx.xxx 80...
+**2. On the attacker’s machine:**  
+> Start Telnet session:
+- `telnet`  
+> Enable binary mode:  
+- `toggle binary`  
+> Connect to victim:  
+- `open 192.xxx.xx.xxx 80`
 
-[Successfully connected to the victim machine via backdoor.]
+[You should now be successfully connected to the victim machine.]\
+```Note: The port can be changed by modifying the backdoor.sh source code.```
+
+---
+
+`Telegram: t.me/oghbnz | E-mail: rhashibur75@gmail.com`
